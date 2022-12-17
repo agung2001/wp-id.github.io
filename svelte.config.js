@@ -1,3 +1,5 @@
+import { mdsvex } from 'mdsvex'
+import mdsvexConfig from "./mdsvex.config.js";
 import adapter from "@sveltejs/adapter-static";
 
 const dev = "production" === "development";
@@ -12,7 +14,9 @@ const config = {
 		paths: {
 			base: dev ? "" : "/wp-id.github.io",
 		}
-	}
+	},
+	extensions: [".svelte", ...mdsvexConfig.extensions],
+	preprocess: [mdsvex(mdsvexConfig)],
 };
 
 export default config;
