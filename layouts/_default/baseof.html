@@ -7,6 +7,7 @@
 	<title>{{ .Title }}</title>
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+	<link rel="icon" href="{{ `img/favicon.ico` | relURL }}" sizes="32x32" />
 	<link rel="stylesheet" href="{{ `css/tailwind.min.css` | relURL }}">
 	<link rel="stylesheet" href="{{ `css/style.min.css` | relURL }}">
 	{{ with .OutputFormats.Get "RSS" -}}

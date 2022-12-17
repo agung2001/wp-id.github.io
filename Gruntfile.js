@@ -91,7 +91,9 @@ module.exports = function(grunt) {
 
     /** Register Tasks */
     grunt.registerTask('default', ['watch', 'shell:npm_tailwind']);
-    grunt.registerTask('build-css', ['shell:npm_tailwind', 'cssmin', 'shell:sass']);
+    grunt.registerTask('build-css', ['shell:npm_tailwind',
+        // 'cssmin',
+        'shell:sass']);
     grunt.registerTask('build-js', [ ...componentsID ]);
     grunt.registerTask('build', ['build-css', 'build-js']);
 
