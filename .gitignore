@@ -2,10 +2,15 @@
 /.idea
 /.vscode
 
+# Vendor
+/node_modules
+
 # Extras
+package-lock.json
 .DS_Store
 .env
 
 # Builds
 public
-*.js.map
+assets/build
+static/**/*.css.map
