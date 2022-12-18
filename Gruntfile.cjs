@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 
         /** Compile TailwindCSS - Cross Platform */
         shell: {
-            sveltekit: { command: `npm run build` },
+            sveltekit: { command: `npm run build:dev` },
             npm_tailwind: { command:
                     `npx tailwindcss build assets/css/tailwind/style.css -o static/css/tailwind.min.css --silent && ` +
                     `node tailwindcsssupport.js`

@@ -7,7 +7,7 @@ node_modules
 package-lock.json
 
 # Build
-/docs
+/public
 static/css/style.min.css
 static/css/tailwind.min.css
 
@@ -18,6 +18,7 @@ static/css/tailwind.min.css
 /package
 .env
 .env.*
+.development
 !.env.example
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*

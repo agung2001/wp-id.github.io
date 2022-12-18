@@ -73,7 +73,7 @@
             </div>
         </div>
         <div class="mx-auto mb-12 text-center">
-            <a href="https://wp-id.org" class="bg-black text-white px-6 py-4 rounded-xl mx-auto" target="_blank">
+            <a href="https://wp-id.org" class="bg-black text-white px-6 py-4 rounded-xl mx-auto" target="_blank" rel="noreferrer">
                 Explore More
             </a>
         </div>

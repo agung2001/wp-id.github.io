@@ -1,14 +1,15 @@
 import adapter from "@sveltejs/adapter-static";
+import * as fs from 'fs';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
 		adapter: adapter({
-			pages: "docs",
-			assets: "docs"
+			pages: (!fs.existsSync('./.development')) ? "docs" : "public",
+			assets: (!fs.existsSync('./.development')) ? "docs" : "public"
 		}),
 		paths: {
-			base: process.env.NODE_ENV === "production" ? "/wp-id.github.io" : "",
+			base: (!fs.existsSync('./.development')) ? "/wp-id.github.io" : "",
 		}
 	}
 };

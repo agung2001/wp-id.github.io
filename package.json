@@ -5,6 +5,8 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
+		"build:dev": "touch .development && vite build",
+		"build:prod": "rm -f .development && vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch"
@@ -14,6 +16,7 @@
 		"@sveltejs/adapter-static": "^1.0.0-next.50",
 		"@sveltejs/kit": "^1.0.0",
 		"autoprefixer": "^10.4.13",
+		"dotenv-flow": "^3.2.0",
 		"grunt": "^1.5.3",
 		"grunt-contrib-cssmin": "^4.0.0",
 		"grunt-contrib-watch": "^1.1.0",
