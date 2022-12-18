@@ -4,10 +4,11 @@ import * as fs from 'fs';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: adapter({
-			pages: (!fs.existsSync('./.development')) ? "docs" : "public",
-			assets: (!fs.existsSync('./.development')) ? "docs" : "public"
-		}),
+		// adapter: adapter({
+		// 	pages: (!fs.existsSync('./.development')) ? "docs" : "public",
+		// 	assets: (!fs.existsSync('./.development')) ? "docs" : "public"
+		// }),
+		adapter: adapter(),
 		paths: {
 			base: (!fs.existsSync('./.development')) ? "/wp-id.github.io" : "",
 		}

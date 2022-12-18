@@ -5,9 +5,6 @@
 # Vendor
 node_modules
 
-# Build
-/public
-
 # Svelte
 .DS_Store
 /build
