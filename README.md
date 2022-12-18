@@ -1,5 +1,9 @@
-# WP-ID Website
+# WordPress Indonesia Website
 
+Komunitas WordPress Indonesia
 
-## Resources
-- [Let's learn SvelteKit by building a static Markdown blog from scratch](https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog)
+## ⚒️ Tools
+- [Hugo](https://gohugo.io/)
+- [GruntJS](https://gruntjs.com/)
+- [SvelteJS](https://svelte.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
