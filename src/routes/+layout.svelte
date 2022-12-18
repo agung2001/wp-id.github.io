@@ -1,6 +1,7 @@
 <script>
     import { base } from '$app/paths';
-    console.log(base);
+    import Header from "../components/Header.svelte";
+    import Footer from "../components/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -9,4 +10,6 @@
     <link href="{base}css/style.min.css" rel="stylesheet">
 </svelte:head>
 
+<Header />
 <slot />
+<Footer />
