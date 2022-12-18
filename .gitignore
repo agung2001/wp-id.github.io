@@ -7,8 +7,6 @@ node_modules
 
 # Build
 /public
-static/css/style.min.css
-static/css/tailwind.min.css
 
 # Svelte
 .DS_Store
