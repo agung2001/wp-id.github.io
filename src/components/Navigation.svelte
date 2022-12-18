@@ -5,10 +5,10 @@
 </script>
 
 <!-- Navigation -->
-<nav id="site-nav" class="w-full t-0 px-4 md:px-6 antialiased z-10">
+<nav id="site-nav" class="w-full t-0 px-4 md:px-16 antialiased z-10">
     <div class="mx-auto">
         <nav class="relative z-50 h-24 select-none">
-            <div class="grid grid-cols-3 h-24 mx-auto font-medium md:overflow-visible px-6">
+            <div class="grid grid-cols-3 h-24 mx-auto font-medium md:overflow-visible px-4">
                 <div class="flex items-center h-full">
                     <a href="{ base }" class="flex gap-3 inline-block py-4 md:py-0">
                         <svg xmlns="http://www.w3.org/2000/svg" role="img" class="w-6 h-6" viewBox="0 0 28 28">

@@ -4,17 +4,9 @@
     let { title } = config;
 </script>
 
-<footer class="px-16 mt-12 mb-6">
-    <div class="bg-black p-8 rounded-2xl">
-        <div class="text-center mb-12">
-            <div class="text-xl text-white font-bold">Mari Tergabung di Dalam Komunitas WordPress Indonesia</div>
-            <div class="text-gray-400">Bergabung dengan 77,000+ anggota dari seluruh Indonesia</div>
-            <div class="flex">
-
-            </div>
-        </div>
-
-        <div class="flex justify-between text-white ">
+<footer class="mt-12">
+    <div class="bg-black text-white p-12">
+        <div class="flex justify-between">
             <div class="flex items-center h-full">
                 <a href="{base}" class="flex gap-3 inline-block py-4 md:py-0">
                     <svg xmlns="http://www.w3.org/2000/svg" role="img" class="w-6 h-6" viewBox="0 0 28 28">
