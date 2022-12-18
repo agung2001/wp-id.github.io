@@ -4,7 +4,6 @@
     import {page} from "$app/stores";
     let { title } = config;
     let ActiveMenu = $page.url.pathname;
-    console.log(ActiveMenu);
     let MobileMenuActive = false;
     let dropdowns = { repository: false }
 </script>

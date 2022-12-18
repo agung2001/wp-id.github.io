@@ -1,24 +1,35 @@
 <script>
     import { base } from '$app/paths';
     import config from "../config.js";
-    import {onMount} from "svelte";
+    import {afterUpdate, onMount, tick} from "svelte";
     let { title, APIURL } = config;
+    let page = 1;
     let posts = [];
     let headline;
     let loading = true;
 
-    /** Lifecycle onMount */
-    onMount(async () => {
-        /** Get Posts */
-        await fetch(`${APIURL}/posts?per_page=15`)
+    /** GetPosts */
+    const GetPosts = async () => {
+        await fetch(`${APIURL}/posts?per_page=15&page=${page}`)
             .then((response) => response.json())
             .then((data) => {
                 /** Assign Value */
-                headline = data[0];
-                data.shift();
-                posts = data;
-                loading = false;
+                if(!headline){
+                    headline = data[0];
+                    data.shift();
+                    loading = false;
+                }
+                posts = [...posts, ...data]
             });
+    }
+
+    const scrollToBottom = async (node) => {
+        node.scroll({ top: node.scrollHeight, behavior: 'smooth' });
+    };
+
+    /** Lifecycle onMount */
+    onMount(async () => {
+        GetPosts()
     });
 
     /** Truncate by number of words */
@@ -72,10 +83,13 @@
                 {/each}
             </div>
         </div>
-        <div class="mx-auto mb-12 text-center">
-            <a href="https://wp-id.org" class="bg-black text-white px-6 py-4 rounded-xl mx-auto" target="_blank" rel="noreferrer">
-                Explore More
-            </a>
+        <div class="mx-auto mt-6 mb-12 text-center">
+            <span class="gap-x-4 bg-black text-white px-6 py-4 rounded-full mx-auto cursor-pointer"
+                on:click={() => { page++; GetPosts() }}
+            >
+                <i class="fa-solid fa-glasses pt-1 pr-2"></i>
+                Read More
+            </span>
         </div>
     {/if}
 {/if}
