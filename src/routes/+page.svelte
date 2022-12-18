@@ -36,21 +36,21 @@
     {#if headline}
         <div class="headline-cover rounded-2xl overflow-hidden w-full h-screen mx-auto" style="max-height:80vh;">
             <a href="{ headline['link'] }" target="_blank" rel="noreferrer">
-                <img class="object-cover w-full h-full opacity-70"
+                <img class="object-cover w-full h-full opacity-40 md:opacity-70 hover:opacity-100 ease-in duration-300"
                      src="{ headline['yoast_head_json']['og_image'][0]['url'] }"
                      alt="{headline['title']['rendered']}" >
-                <div class="absolute px-12 text-white -mt-60">
-                    <div class="text-xl pb-4">Featured</div>
+                <div class="absolute px-8 md:px-12 text-white -mt-72 md:-mt-60">
+                    <div class="text-xl pb-4">Headline</div>
                     <h3 class="text-3xl font-bold pb-4">{ headline['title']['rendered'] }</h3>
-                    <div class="w-7/12">{ @html headline['excerpt']['rendered'] }</div>
+                    <div class="w-full md:w-7/12">{ @html truncate(headline['excerpt']['rendered'], 40)  }</div>
                 </div>
             </a>
         </div>
     {/if}
     {#if posts}
-        <div class="mt-8 px-20 py-6">
+        <div class="mt-8 px-8 md:px-20 py-6">
             <h3 class="text-2xl font-bold mb-6">Recent blog posts</h3>
-            <div class="columns-3 gap-x-6">
+            <div class="md:columns-3 gap-x-6">
                 {#each posts as post}
                     <div class="break-inside-avoid">
                         <a href="{ post['link'] }" target="_blank" rel="noreferrer">
