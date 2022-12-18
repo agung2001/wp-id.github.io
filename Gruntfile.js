@@ -1,33 +1,3 @@
-/** Load Javascript Library */
-const path = require("path");
-
-/**
- * Components Scripts
- * */
-const components = ['content'];
-const getShellComponents = () => {
-    let shell = {};
-    components.map((c) => {
-        let command = { command: `npx rollup -c assets/components/${c}/rollup.config.js` };
-        shell[`rollup_component_${c}`] = command;
-    });
-    return shell;
-};
-const getWatcherComponents = () => {
-    let watcher = {};
-    components.map((c) => {
-        let FilesTasks = {
-            files: [
-                `assets/components/${c}/**/*.js`,
-                `assets/components/${c}/**/*.svelte`,
-            ],
-            tasks: [`build-component-${c}`, 'build-css']
-        };
-        watcher[`component_${c}`] = FilesTasks;
-    });
-    return watcher;
-};
-
 module.exports = function(grunt) {
 
     /** Configuration */
@@ -36,13 +6,12 @@ module.exports = function(grunt) {
 
         /** Compile TailwindCSS - Cross Platform */
         shell: {
-            ...getShellComponents(),
-            tailwind: { command:
-                `npx tailwindcss build assets/css/tailwind/style.css -o assets/build/css/tailwind.min.css --silent && ` +
-                `node tailwindcsssupport.js`
+            npm_tailwind: { command:
+                    `npx tailwindcss build assets/css/tailwind/style.css -o static/css/tailwind.min.css --silent && ` +
+                    `node tailwindcsssupport.js`
             },
             sass: { command:
-                    `sass assets/css/styles/style.scss assets/build/css/style.min.css --style compressed`
+                    `sass assets/css/styles/style.scss static/css/style.min.css --style compressed`
             }
         },
 
@@ -54,7 +23,7 @@ module.exports = function(grunt) {
             },
             target: {
                 files: {
-                    "assets/build/css/tailwind.min.css" : "assets/build/css/tailwind.min.css"
+                    "static/css/tailwind.min.css" : "static/css/tailwind.min.css"
                 }
             }
         },
@@ -68,11 +37,11 @@ module.exports = function(grunt) {
                 files: [
                     'assets/css/**/*.scss',
                     'assets/css/**/*.css',
-                    'index.html'
+                    'layouts/**/*.html',
+                    'content/**/*.md',
                 ],
                 tasks: ['build-css']
-            },
-            ...getWatcherComponents(),
+            }
         },
     });
 
@@ -81,17 +50,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-    /** Component */
-    let componentsID = [];
-    components.map((c) => {
-        componentsID.push(`build-component-${c}`);
-        grunt.registerTask(`build-component-${c}`, [ `shell:rollup_component_${c}` ]);
-    });
-
     /** Register Tasks */
     grunt.registerTask('default', ['watch', 'shell:npm_tailwind']);
-    grunt.registerTask('build-css', ['shell:tailwind', 'cssmin', 'shell:sass']);
-    grunt.registerTask('build-js', [ ...componentsID ]);
+    grunt.registerTask('build-css', ['shell:npm_tailwind', 'cssmin', 'shell:sass']);
+    grunt.registerTask('build-js', []);
     grunt.registerTask('build', ['build-css', 'build-js']);
 
 };
