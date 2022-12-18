@@ -8,6 +8,8 @@ package-lock.json
 
 # Build
 /docs
+static/css/style.min.css
+static/css/tailwind.min.css
 
 # Svelte
 .DS_Store

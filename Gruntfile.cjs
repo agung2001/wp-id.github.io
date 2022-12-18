@@ -31,15 +31,19 @@ module.exports = function(grunt) {
 
         /** Configure watch task */
         watch: {
-            options: {
-                livereload: true,
+            src: {
+                files: [
+                    './src/**/*.html',
+                    './src/**/*.svelte',
+                    './src/**/*.ts',
+                    './src/**/*.js',
+                ],
+                tasks: ['build-css', 'build-js']
             },
             css: {
                 files: [
                     'assets/css/**/*.scss',
                     'assets/css/**/*.css',
-                    'layouts/**/*.html',
-                    'content/**/*.md',
                 ],
                 tasks: ['build-css']
             }
