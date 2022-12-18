@@ -6,26 +6,28 @@
     let page = 1;
     let posts = [];
     let headline;
-    let loading = true;
+    let PageLoading = true; // Initial Page Load
+    let ReadMoreLoading = false;
+    let NoDataLefttoLoad = false;
+    let masonry;
 
     /** GetPosts */
     const GetPosts = async () => {
         await fetch(`${APIURL}/posts?per_page=15&page=${page}`)
             .then((response) => response.json())
             .then((data) => {
-                /** Assign Value */
-                if(!headline){
-                    headline = data[0];
-                    data.shift();
-                    loading = false;
-                }
-                posts = [...posts, ...data]
+                if(data){
+                    /** Assign Value */
+                    if(!headline){
+                        headline = data[0];
+                        data.shift();
+                        PageLoading = false;
+                    }
+                    posts = [...posts, ...data]
+                    ReadMoreLoading = false;
+                } else { NoDataLefttoLoad = true; }
             });
     }
-
-    const scrollToBottom = async (node) => {
-        node.scroll({ top: node.scrollHeight, behavior: 'smooth' });
-    };
 
     /** Lifecycle onMount */
     onMount(async () => {
@@ -36,9 +38,22 @@
     function truncate(str, no_words) {
         return str.split(" ").splice(0,no_words).join(" ");
     }
+
+    afterUpdate(() => {
+        if (posts) {
+            let elem = document.querySelector('.masonry-grid');
+            if(elem){
+                setTimeout(function(){
+                    masonry = new Masonry( elem, {
+                        itemSelector: '.masonry-grid-item'
+                    });
+                }, 500)
+            }
+        }
+    });
 </script>
 
-{#if loading}
+{#if PageLoading}
     <div class="mt-6 px-12 py-6 text-center">
         <img src="{base}/img/loading.gif" class="mx-auto" alt="Loading..."> <br>
         Loading ...
@@ -61,9 +76,9 @@
     {#if posts}
         <div class="mt-8 px-8 md:px-20 py-6">
             <h3 class="text-2xl font-bold mb-6">Recent blog posts</h3>
-            <div class="md:columns-3 gap-x-6">
+            <div class="masonry-grid">
                 {#each posts as post}
-                    <div class="break-inside-avoid">
+                    <div class="break-inside-avoid masonry-grid-item w-1/3 px-3">
                         <a href="{ post['link'] }" target="_blank" rel="noreferrer">
                             <div class="blog-cover rounded-xl overflow-hidden border-2 border-gray-100 w-full">
                                 {#if post?.yoast_head_json?.og_image }
@@ -83,13 +98,22 @@
                 {/each}
             </div>
         </div>
-        <div class="mx-auto mt-6 mb-12 text-center">
-            <span class="gap-x-4 bg-black text-white px-6 py-4 rounded-full mx-auto cursor-pointer"
-                on:click={() => { page++; GetPosts() }}
-            >
-                <i class="fa-solid fa-glasses pt-1 pr-2"></i>
-                Read More
-            </span>
-        </div>
+        {#if !NoDataLefttoLoad}
+            <div class="mx-auto mt-6 mb-12 text-center">
+                <span class="gap-x-4 bg-black text-white px-6 py-4 rounded-full mx-auto cursor-pointer"
+                    on:click={() => { ReadMoreLoading = true; page++; GetPosts() }}
+                >
+                    {#if ReadMoreLoading}
+                        <i class="fa-solid fa-spinner pt-1 pr-2"></i>
+                        Loading ...
+                    {:else}
+                        <i class="fa-solid fa-glasses pt-1 pr-2"></i>
+                        Read More
+                    {/if}
+                </span>
+            </div>
+        {/if}
     {/if}
+
+
 {/if}
