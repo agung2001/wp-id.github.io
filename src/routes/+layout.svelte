@@ -11,5 +11,7 @@
 </svelte:head>
 
 <Header />
-<slot />
+<main class="px-6">
+    <slot />
+</main>
 <Footer />
