@@ -1,22 +1,17 @@
-import { mdsvex } from 'mdsvex'
-import mdsvexConfig from "./mdsvex.config.js";
 import adapter from "@sveltejs/adapter-static";
+import * as fs from 'fs';
 
-const dev = "production" === "development";
-
-/** @type {import(""@sveltejs/kit").Config} */
+/** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
 		adapter: adapter({
-			pages: "docs",
-			assets: "docs"
+			pages: (!fs.existsSync('./.development')) ? "docs" : "public",
+			assets: (!fs.existsSync('./.development')) ? "docs" : "public"
 		}),
 		paths: {
-			base: dev ? "" : "/wp-id.github.io",
+			base: (!fs.existsSync('./.development')) ? "/wp-id.github.io" : "",
 		}
-	},
-	extensions: [".svelte", ...mdsvexConfig.extensions],
-	preprocess: [mdsvex(mdsvexConfig)],
+	}
 };
 
 export default config;

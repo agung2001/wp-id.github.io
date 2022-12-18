@@ -4,6 +4,12 @@
 
 # Vendor
 node_modules
+package-lock.json
+
+# Build
+/public
+static/css/style.min.css
+static/css/tailwind.min.css
 
 # Svelte
 .DS_Store
@@ -12,6 +18,7 @@ node_modules
 /package
 .env
 .env.*
+.development
 !.env.example
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
