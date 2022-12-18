@@ -3,14 +3,22 @@
 /.vscode
 
 # Vendor
-/node_modules
-
-# Extras
+node_modules
 package-lock.json
-.DS_Store
-.env
 
-# Builds
-public
-assets/build
-static/**/*.css.map
+# Build
+/public
+static/css/style.min.css
+static/css/tailwind.min.css
+
+# Svelte
+.DS_Store
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+.development
+!.env.example
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*

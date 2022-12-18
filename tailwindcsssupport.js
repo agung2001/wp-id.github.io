@@ -1,4 +1,4 @@
-const shell = require("shelljs");
+import shell from "shelljs"
 const tailwindfilePath = './assets/build/css/tailwind.min.css';
 
 shell.sed('-i', 'rgb', 'RGB', tailwindfilePath).to(tailwindfilePath);

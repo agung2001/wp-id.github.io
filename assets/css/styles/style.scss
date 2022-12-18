@@ -1,9 +1,6 @@
-.cover-image:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to bottom, transparent 0%, black 100%);
-}
+body { font-family: 'Inter', sans-serif; }
+.headline-cover { background: #2c2c2c; }
+//.headline-cover, .blog-cover {
+//  background: rgb(2,0,36);
+//  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(0, 225, 255) 100%);
+//}
