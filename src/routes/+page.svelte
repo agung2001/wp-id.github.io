@@ -48,7 +48,7 @@
         </div>
     {/if}
     {#if posts}
-        <div class="mt-8 px-24 py-6">
+        <div class="mt-8 px-20 py-6">
             <h3 class="text-2xl font-bold mb-6">Recent blog posts</h3>
             <div class="columns-3 gap-x-6">
                 {#each posts as post}
@@ -72,7 +72,7 @@
                 {/each}
             </div>
         </div>
-        <div class="mx-auto mt-16 mb-28 text-center">
+        <div class="mx-auto mb-12 text-center">
             <a href="https://wp-id.org" class="bg-black text-white px-6 py-4 rounded-xl mx-auto" target="_blank">
                 Explore More
             </a>

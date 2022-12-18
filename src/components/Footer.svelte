@@ -9,8 +9,19 @@
         <div class="text-center mb-12">
             <div class="text-xl text-white font-bold">Mari Tergabung di Dalam Komunitas WordPress Indonesia</div>
             <div class="text-gray-400">Bergabung dengan 77,000+ anggota dari seluruh Indonesia</div>
-            <div class="flex">
-
+            <div class="flex items-center text-white text-lg gap-x-6 mx-auto">
+                <a href="https://www.facebook.com/groups/wp.indonesia/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://github.com/wp-id/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://gitlab.com/wp-id/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-gitlab"></i>
+                </a>
+                <a href="https://chat.wp-id.org/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-slack"></i>
+                </a>
             </div>
         </div>
 
