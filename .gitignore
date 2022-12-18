@@ -4,12 +4,6 @@
 
 # Vendor
 node_modules
-package-lock.json
-
-# Build
-/public
-static/css/style.min.css
-static/css/tailwind.min.css
 
 # Svelte
 .DS_Store
