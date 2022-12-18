@@ -5,19 +5,19 @@
   "author": "Agung Sundoro",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.2.6",
-    "grunt": "^1.4.1",
-    "grunt-autoprefixer": "^3.0.4",
-    "grunt-contrib-concat": "^1.0.1",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "grunt": "^1.5.3",
     "grunt-contrib-cssmin": "^4.0.0",
-    "grunt-contrib-uglify": "^5.0.1",
-    "grunt-contrib-uglify-es": "github:gruntjs/grunt-contrib-uglify#harmony",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-run": "^0.8.1",
-    "grunt-sass": "^3.1.0",
-    "grunt-shell": "^3.0.0",
-    "node-sass": "^6.0.0",
+    "grunt-shell": "^4.0.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
     "shelljs": "^0.8.5",
-    "tailwindcss": "^3.1.8"
+    "svelte": "^3.0.0",
+    "tailwindcss": "^3.2.4"
   }
 }

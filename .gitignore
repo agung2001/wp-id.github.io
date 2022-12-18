@@ -11,6 +11,4 @@ package-lock.json
 .env
 
 # Builds
-public
-assets/build
-static/**/*.css.map
+assets/build/**/*.css.map

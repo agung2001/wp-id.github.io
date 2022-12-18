@@ -2,8 +2,7 @@ module.exports = {
   mode: 'jit',
   content: [
     './assets/components/**/*.svelte',
-    'layouts/**/*.html',
-    'content/**/*.md',
+      "index.html"
   ],
   theme: {
     extend: {},

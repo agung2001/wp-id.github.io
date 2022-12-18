@@ -4,7 +4,7 @@ const path = require("path");
 /**
  * Components Scripts
  * */
-const components = [];
+const components = ['content'];
 const getShellComponents = () => {
     let shell = {};
     components.map((c) => {
@@ -37,12 +37,12 @@ module.exports = function(grunt) {
         /** Compile TailwindCSS - Cross Platform */
         shell: {
             ...getShellComponents(),
-            npm_tailwind: { command:
-                `npx tailwindcss build assets/css/tailwind/style.css -o static/css/tailwind.min.css --silent && ` +
+            tailwind: { command:
+                `npx tailwindcss build assets/css/tailwind/style.css -o assets/build/css/tailwind.min.css --silent && ` +
                 `node tailwindcsssupport.js`
             },
             sass: { command:
-                `sass assets/css/styles/style.scss static/css/style.min.css --style compressed`
+                    `sass assets/css/styles/style.scss assets/build/css/style.min.css --style compressed`
             }
         },
 
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
             },
             target: {
                 files: {
-                    "static/css/tailwind.min.css" : "static/css/tailwind.min.css"
+                    "assets/build/css/tailwind.min.css" : "assets/build/css/tailwind.min.css"
                 }
             }
         },
@@ -68,8 +68,7 @@ module.exports = function(grunt) {
                 files: [
                     'assets/css/**/*.scss',
                     'assets/css/**/*.css',
-                    'layouts/**/*.html',
-                    'content/**/*.md',
+                    'index.html'
                 ],
                 tasks: ['build-css']
             },
@@ -91,9 +90,7 @@ module.exports = function(grunt) {
 
     /** Register Tasks */
     grunt.registerTask('default', ['watch', 'shell:npm_tailwind']);
-    grunt.registerTask('build-css', ['shell:npm_tailwind',
-        // 'cssmin',
-        'shell:sass']);
+    grunt.registerTask('build-css', ['shell:tailwind', 'cssmin', 'shell:sass']);
     grunt.registerTask('build-js', [ ...componentsID ]);
     grunt.registerTask('build', ['build-css', 'build-js']);
 
