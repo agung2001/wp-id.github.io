@@ -79,8 +79,8 @@
             <div class="masonry-grid">
                 {#each posts as post}
                     <div class="break-inside-avoid masonry-grid-item w-1/3 px-3">
-                        <a href="{ post['link'] }" target="_blank" rel="noreferrer">
-                            <div class="blog-cover rounded-xl overflow-hidden border-2 border-gray-100 w-full">
+                        <div class="blog-cover drop-shadow hover:drop-shadow-lg rounded-xl overflow-hidden border border-gray-100 w-full ease-in duration-100">
+                            <a href="{ post['link'] }" target="_blank" rel="noreferrer">
                                 {#if post?.yoast_head_json?.og_image }
                                     <img class="w-full opacity-100"
                                          src="{ post['yoast_head_json']['og_image'][0]['url'] }"
@@ -90,10 +90,16 @@
                                          src="{base}/img/thumbnail.png"
                                          alt="{ post['title']['rendered'] }">
                                 {/if}
-                            </div>
+                            </a>
+                        </div>
+                        <a href="{ post['link'] }" target="_blank" rel="noreferrer">
                             <h4 class="text-lg font-bold mt-4">{ post['title']['rendered'] }</h4>
-                            <div class="mt-3 mb-8">{ @html truncate(post['excerpt']['rendered'], 30) }</div>
                         </a>
+                        <div class="mt-3 mb-8">
+                            { @html
+                                `${truncate(post['excerpt']['rendered'], 30)} <a href="${ post['link'] }" class="border-b border-black" target="_blank" rel="noreferrer">Baca Selengkapnya</a>`
+                            }
+                        </div>
                     </div>
                 {/each}
             </div>
@@ -101,7 +107,7 @@
         {#if !NoDataLefttoLoad}
             <div class="mx-auto mt-6 mb-12 text-center">
                 <span class="gap-x-4 bg-black text-white px-6 py-4 rounded-full mx-auto cursor-pointer"
-                    on:click={() => { ReadMoreLoading = true; page++; GetPosts() }}
+                      on:click={() => { ReadMoreLoading = true; page++; GetPosts() }}
                 >
                     {#if ReadMoreLoading}
                         <i class="fa-solid fa-spinner pt-1 pr-2"></i>
