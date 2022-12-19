@@ -23,7 +23,6 @@ jobs:
         run: |
           npm ci
           npx grunt build
-          node list.js
           npm run build
 
       - name: Deploy 🚀

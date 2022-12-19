@@ -9,7 +9,7 @@ node_modules
 /build
 /static/css/style.min.css
 /static/css/tailwind.min.css
-/static/meetup/list.json
+/static/developer/list.json
 /static/*.css.map
 /static/*.js.map
 
