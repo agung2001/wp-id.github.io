@@ -2,6 +2,7 @@
     import { base } from '$app/paths';
     import {_GetPost} from "./+page.js";
     import {onMount} from "svelte";
+    import {DocTitle} from "../../stores/Layout.js";
     import moment from 'moment';
     let post;
     let PageLoading = true; // Initial Page Load
@@ -10,6 +11,7 @@
     onMount(async () => {
         const urlParams = new URLSearchParams(window.location.search);
         post = await _GetPost(urlParams.get('id'))
+        DocTitle.set(post['title']['rendered'])
         PageLoading = false
     });
 </script>

@@ -1,7 +1,7 @@
 <script>
     import { base } from '$app/paths';
     import config from "../config.js";
-    import {afterUpdate, onMount, tick} from "svelte";
+    import {afterUpdate, onMount} from "svelte";
     let { title, APIURL } = config;
     let page = 1;
     let posts = [];
