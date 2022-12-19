@@ -48,6 +48,20 @@
                 </li>
                 <li>
                     <a
+                            href="{base}/meetup"
+                            class="flex md:justify-center gap-x-2 rounded-lg px-5 py-2.5 md:text-center"
+                            class:text-white={ActiveMenu==`${base}/meetup/`}
+                            class:bg-black={ActiveMenu==`${base}/meetup/`}
+                            class:hover:bg-slate-200={ActiveMenu!=`${base}/meetup/`}
+                            class:hover:text-black={ActiveMenu!=`${base}/meetup/`}
+                            on:click={() => { ActiveMenu = `${base}/meetup/` }}
+                    >
+                        <i class="fa-brands fa-meetup pt-1"></i>
+                        Meetup
+                    </a>
+                </li>
+                <li>
+                    <a
                         href="{base}/about"
                         class="flex md:justify-center gap-x-2 rounded-lg px-5 py-2.5 md:text-center"
                         class:text-white={ActiveMenu==`${base}/about/`}
@@ -56,7 +70,7 @@
                         class:hover:text-black={ActiveMenu!=`${base}/about/`}
                         on:click={() => { ActiveMenu = `${base}/about/` }}
                     >
-                        <i class="fa-solid fa-circle-info pt-1"></i>
+                        <i class="fa-solid fa-mug-hot pt-1"></i>
                         Tentang
                     </a>
                 </li>
