@@ -5,9 +5,13 @@
 # Vendor
 node_modules
 
+# Build
+/build
+/static/css/*
+/static/meetup/list.json
+
 # Svelte
 .DS_Store
-/build
 /.svelte-kit
 /package
 .env
