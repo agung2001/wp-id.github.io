@@ -4,9 +4,7 @@ on:
   push:
     branches:
       - master
-      - feature/packages
-    tags:
-      - '*'
+      - feature/publish
 
 permissions:
   contents: write
