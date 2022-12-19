@@ -1,0 +1,16 @@
+{
+  "name": "Sofyan Sitorus",
+  "nickname": "sofyansitorus",
+  "profile_pict": "https://secure.gravatar.com/avatar/ea2f5abf0a80a45ba5f8e976a0ab3da5?s=100&d=mm&r=g",
+  "your_contribution": "",
+  "socials": [
+    {
+      "icon": "fa-brands fa-wordpress",
+      "url": "https://profiles.wordpress.org/sofyansitorus/"
+    },
+    {
+      "icon": "fa-brands fa-github",
+      "url": "https://github.com/sofyansitorus"
+    }
+  ]
+}

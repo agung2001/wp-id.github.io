@@ -13,10 +13,10 @@
 {#if contributor}
     <div class="px-4 md:px-64 mb-12">
         <div class="md:flex gap-x-8 py-12">
-            <div class="overflow-hidden rounded-full w-32 h-32">
+            <div class="overflow-hidden rounded-full w-24 h-24" style="min-width: 6rem;">
                 <img class="object-cover w-full h-full" src="{contributor.profile_pict}" alt="{contributor.name}">
             </div>
-            <div class="pt-2">
+            <div>
                 <h1 class="text-3xl font-bold">{contributor.name}</h1>
                 <p class="py-3 text-gray-500">{contributor.your_contribution}</p>
                 <div class="flex gap-x-4">

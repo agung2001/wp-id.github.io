@@ -1,13 +1,20 @@
 {
   "name": "David Chandra Purnama",
   "nickname": "turtlepod",
-  "profile_pict": "https://avatars.githubusercontent.com/u/1705549?v=4",
-  "your_contribution": "",
+  "profile_pict": "https://secure.gravatar.com/avatar/c0548f69b4e90e67be72b6abe73083f1?s=100&d=mm&r=g",
+  "your_contribution": "WordPress Themer, Pokemon Trainer, Manga Addict, Self-taught Expert, Seriously Disturbed, Spectacularly Overrated.",
   "socials": [
     {
-      "name": "GitHub",
+      "icon": "fa-brands fa-wordpress",
+      "url": "https://profiles.wordpress.org/turtlepod/"
+    },
+    {
       "icon": "fa-brands fa-github",
       "url": "https://github.com/turtlepod"
+    },
+    {
+      "icon": "fa-brands fa-youtube",
+      "url": "https://www.youtube.com/@turtlepod"
     }
   ]
 }

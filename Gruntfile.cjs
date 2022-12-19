@@ -38,6 +38,7 @@ module.exports = function(grunt) {
                     './src/**/*.svelte',
                     './src/**/*.ts',
                     './src/**/*.js',
+                    './static/contributor/**/*.json',
                 ],
                 tasks: ['build']
             },
