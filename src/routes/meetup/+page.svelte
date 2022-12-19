@@ -20,7 +20,7 @@
                     src="{cover}" alt="WordPress Meetup">
             </div>
             <div class="md:col-span-2 pt-6 md:pt-0">
-                <h2 class="text-3xl font-bold pb-6">
+                <h2 class="flex gap-x-4 text-3xl font-bold pb-6">
                     <i class="fa-brands fa-meetup pt-1"></i>
                     Daftar Meetup
                 </h2>

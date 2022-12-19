@@ -1,13 +1,13 @@
 import {base} from "$app/paths";
 
-/** Get Meetup List */
-export const _GetMeetupList = async () => {
-    return await fetch(`${base}/meetup/list.json`)
+/** Get Developer List */
+export const _GetDeveloperList = async () => {
+    return await fetch(`${base}/developer/list.json`)
         .then((response) => response.json())
 }
 
-/** Get Meetup */
-export const _GetMeetup = async (meetup) => {
-    return await fetch(`${base}/meetup/${meetup}`)
+/** Get Developer */
+export const _GetDeveloper = async (meetup) => {
+    return await fetch(`${base}/developer/${meetup}`)
         .then((response) => response.json())
 }
