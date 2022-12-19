@@ -84,7 +84,7 @@
             <h3 class="text-2xl font-bold mb-6">Recent blog posts</h3>
             <div class="masonry-grid">
                 {#each posts as post}
-                    <div class="break-inside-avoid masonry-grid-item w-1/3 px-3">
+                    <div class="break-inside-avoid masonry-grid-item w-full md:w-1/3 px-3">
                         <div class="blog-cover drop-shadow hover:drop-shadow-lg rounded-xl overflow-hidden border border-gray-100 w-full ease-in duration-100">
                             <a href="{base}/blog?id={ post['id'] }">
                                 {#if post?.yoast_head_json?.og_image }

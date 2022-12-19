@@ -20,8 +20,9 @@
             <span class="pl-4 -mt-0.5  self-center text-xl font-semibold whitespace-nowrap dark:text-white">{title}</span>
         </a>
         <div class="flex md:order-2">
-            <a class="text-white bg-black rounded-lg px-5 py-2.5 text-center mr-3">
-                Get started
+            <a class="flex gap-x-2 text-white bg-black rounded-lg px-5 py-2.5 text-center mr-3">
+                <i class="fa-solid fa-medal pt-1"></i>
+                Kontribusi
             </a>
             <button class="inline-flex items-center p-2 ml-3  text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                 on:click={() => { MobileMenuActive = !MobileMenuActive }}
