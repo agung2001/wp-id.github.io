@@ -61,7 +61,7 @@
 {:else}
     {#if headline}
         <div class="headline-cover rounded-2xl overflow-hidden w-full h-screen mx-auto" style="max-height:80vh;">
-            <a href="{ headline['link'] }" target="_blank" rel="noreferrer">
+            <a href="{base}/blog?id={headline['id']}">
                 <img class="object-cover w-full h-full opacity-40 md:opacity-70 hover:opacity-100 ease-in duration-300"
                      src="{ headline['yoast_head_json']['og_image'][0]['url'] }"
                      alt="{headline['title']['rendered']}" >
