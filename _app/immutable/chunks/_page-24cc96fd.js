@@ -1,0 +1,1 @@
+import{c as a}from"./config-926d4d14.js";const n=async t=>{let{APIURL:e}=a;return await fetch(`${e}/posts/${t}`).then(o=>o.json())},s=Object.freeze(Object.defineProperty({__proto__:null,_GetPost:n},Symbol.toStringTag,{value:"Module"}));export{n as _,s as a};
