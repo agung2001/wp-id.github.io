@@ -87,7 +87,7 @@
                         class:hover:text-black={ActiveMenu!=`${base}/developer/`}
                         on:click={() => { ActiveMenu = `${base}/developer/` }}
                     >
-                        <i class="fa-solid fa-users pt-1"></i>
+                        <i class="fa-solid fa-masks-theater pt-1"></i>
                         Pengembang
                     </a>
                 </li>
