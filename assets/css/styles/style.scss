@@ -1,6 +1,18 @@
 body { font-family: 'Inter', sans-serif; }
 .headline-cover { background: #2c2c2c; }
-//.headline-cover, .blog-cover {
-//  background: rgb(2,0,36);
-//  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(0, 225, 255) 100%);
-//}
+.blog-content {
+  a { border-bottom: 2px solid black; }
+  img {
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(243 244 246);
+  }
+  p { margin-bottom: 1.5rem; }
+  hr { margin: 1rem 0; }
+  blockquote {
+    border-left: .5rem solid #707070;
+    padding: 1rem 0 2rem 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+}

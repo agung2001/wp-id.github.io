@@ -1,6 +1,9 @@
-# WordPress Indonesia Website
+# Komunitas WordPress Indonesia
 
-Komunitas WordPress Indonesia
+Headless WordPress website dari [WP-ID](https://wp-id.org). [🌐 Lihat Website Sekarang](https://agung2001.github.io/wp-id.github.io)
+
+![Stars](https://img.shields.io/github/stars/agung2001/wp-id.github.io?style=social)
+![Size](https://img.shields.io/github/repo-size/agung2001/wp-id.github.io)
 
 ## 📝 Installation
 1. Rename : `.env-sample` to `.env`
@@ -14,5 +17,6 @@ Komunitas WordPress Indonesia
 
 ## ⚒️ Tools
 - [GruntJS](https://gruntjs.com/)
-- [SvelteJS](https://svelte.dev/)
+- [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action)
+- [SvelteKit](https://kit.svelte.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
