@@ -79,16 +79,16 @@
                 </li>
                 <li>
                     <a
-                        href="{base}/developer"
+                        href="{base}/contributor"
                         class="flex md:justify-center gap-x-2 rounded-lg px-5 py-2.5 md:text-center"
-                        class:text-white={ActiveMenu==`${base}/developer/`}
-                        class:bg-black={ActiveMenu==`${base}/developer/`}
-                        class:hover:bg-slate-200={ActiveMenu!=`${base}/developer/`}
-                        class:hover:text-black={ActiveMenu!=`${base}/developer/`}
-                        on:click={() => { ActiveMenu = `${base}/developer/` }}
+                        class:text-white={ActiveMenu==`${base}/contributor/`}
+                        class:bg-black={ActiveMenu==`${base}/contributor/`}
+                        class:hover:bg-slate-200={ActiveMenu!=`${base}/contributor/`}
+                        class:hover:text-black={ActiveMenu!=`${base}/contributor/`}
+                        on:click={() => { ActiveMenu = `${base}/contributor/` }}
                     >
                         <i class="fa-solid fa-masks-theater pt-1"></i>
-                        Pengembang
+                        Kontributor
                     </a>
                 </li>
                 <li>
