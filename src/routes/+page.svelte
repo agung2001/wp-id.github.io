@@ -62,9 +62,15 @@
     {#if headline}
         <div class="headline-cover rounded-2xl overflow-hidden w-full h-screen mx-auto" style="max-height:80vh;">
             <a href="{base}/blog?id={headline['id']}">
-                <img class="object-cover w-full h-full opacity-40 md:opacity-70 hover:opacity-100 ease-in duration-300"
-                     src="{ headline['yoast_head_json']['og_image'][0]['url'] }"
-                     alt="{headline['title']['rendered']}" >
+                {#if headline?.yoast_head_json?.og_image }
+                    <img class="object-cover w-full h-full opacity-40 md:opacity-70 hover:opacity-100 ease-in duration-300"
+                         src="{ headline['yoast_head_json']['og_image'][0]['url'] }"
+                         alt="{ headline['title']['rendered'] }">
+                {:else}
+                    <img class="object-cover w-full h-full opacity-40 md:opacity-70 hover:opacity-100 ease-in duration-300"
+                         src="{base}/img/thumbnail.png"
+                         alt="{ headline['title']['rendered'] }">
+                {/if}
                 <div class="absolute px-8 md:px-12 text-white -mt-72 md:-mt-60">
                     <div class="text-xl pb-4">Headline</div>
                     <h3 class="text-3xl font-bold pb-4">{ headline['title']['rendered'] }</h3>
@@ -80,7 +86,7 @@
                 {#each posts as post}
                     <div class="break-inside-avoid masonry-grid-item w-1/3 px-3">
                         <div class="blog-cover drop-shadow hover:drop-shadow-lg rounded-xl overflow-hidden border border-gray-100 w-full ease-in duration-100">
-                            <a href="{ post['link'] }" target="_blank" rel="noreferrer">
+                            <a href="{base}/blog?id={ post['id'] }">
                                 {#if post?.yoast_head_json?.og_image }
                                     <img class="w-full opacity-100"
                                          src="{ post['yoast_head_json']['og_image'][0]['url'] }"
@@ -92,12 +98,12 @@
                                 {/if}
                             </a>
                         </div>
-                        <a href="{ post['link'] }" target="_blank" rel="noreferrer">
+                        <a href="{base}/blog?id={ post['id'] }">
                             <h4 class="text-lg font-bold mt-4">{ post['title']['rendered'] }</h4>
                         </a>
                         <div class="mt-3 mb-8">
                             { @html
-                                `${truncate(post['excerpt']['rendered'], 30)} <a href="${ post['link'] }" class="border-b border-black" target="_blank" rel="noreferrer">Baca Selengkapnya</a>`
+                                `${truncate(post['excerpt']['rendered'], 30)} <a href="${base}/blog?id=${ post['id'] }" class="border-b border-black">Baca Selengkapnya</a>`
                             }
                         </div>
                     </div>
