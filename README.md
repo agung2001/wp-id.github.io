@@ -1,3 +1,4 @@
+![screenshot](screenshot.png)
 # Komunitas WordPress Indonesia
 
 Headless WordPress website dari [WP-ID](https://wp-id.org). 
