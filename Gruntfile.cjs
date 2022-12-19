@@ -56,9 +56,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     /** Register Tasks */
-    grunt.registerTask('default', ['watch', 'shell:npm_tailwind']);
     grunt.registerTask('build-css', ['shell:npm_tailwind', 'cssmin', 'shell:sass']);
     grunt.registerTask('build-js', ['shell:sveltekit']);
     grunt.registerTask('build', ['build-css', 'build-js']);
+    grunt.registerTask('default', ['build-css']);
 
 };
