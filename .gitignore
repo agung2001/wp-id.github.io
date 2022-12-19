@@ -7,8 +7,11 @@ node_modules
 
 # Build
 /build
-/static/css/*
+/static/css/style.min.css
+/static/css/tailwind.min.css
 /static/meetup/list.json
+/static/*.css.map
+/static/*.js.map
 
 # Svelte
 .DS_Store
