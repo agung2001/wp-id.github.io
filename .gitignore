@@ -5,9 +5,16 @@
 # Vendor
 node_modules
 
+# Build
+/build
+/static/css/style.min.css
+/static/css/tailwind.min.css
+/static/contributor/list.json
+/static/*.css.map
+/static/*.js.map
+
 # Svelte
 .DS_Store
-/build
 /.svelte-kit
 /package
 .env

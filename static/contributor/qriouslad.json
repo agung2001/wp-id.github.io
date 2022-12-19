@@ -1,0 +1,16 @@
+{
+  "name": "Bowo",
+  "nickname": "qriouslad",
+  "profile_pict": "https://secure.gravatar.com/avatar/d8cfd8f51c30981241e31e4e703c93a2?s=100&d=mm&r=g",
+  "your_contribution": "WordPress web designer and developer",
+  "socials": [
+    {
+      "icon": "fa-brands fa-wordpress",
+      "url": "https://profiles.wordpress.org/qriouslad/"
+    },
+    {
+      "icon": "fa-brands fa-github",
+      "url": "https://github.com/qriouslad"
+    }
+  ]
+}

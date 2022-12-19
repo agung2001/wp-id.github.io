@@ -1,0 +1,16 @@
+{
+  "name": "Agung Sundoro",
+  "nickname": "agung2001",
+  "profile_pict": "https://secure.gravatar.com/avatar/d43b216a46f3d368e0da3f48ea70210d?s=100&d=mm&r=g",
+  "your_contribution": "Saya adalah WP Developer, saya mengembankan Plugin & Thema dan membagikannya secara gratis di WordPress Theme directory.",
+  "socials": [
+      {
+        "icon": "fa-brands fa-wordpress",
+        "url": "https://profiles.wordpress.org/agung2001/"
+      },
+      {
+        "icon": "fa-brands fa-github",
+        "url": "https://github.com/agung2001"
+      }
+  ]
+}

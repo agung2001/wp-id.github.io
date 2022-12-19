@@ -11,7 +11,9 @@
 <!-- Navigation -->
 <nav class="px-6 py-6 md:px-16 items-center bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
     <div class="flex flex-wrap items-center justify-between mx-auto px-2">
-        <a href="{base}" class="flex items-center">
+        <a href="{base}" class="flex items-center"
+           on:click={() => { ActiveMenu = `${base}/` }}
+        >
             <svg xmlns="http://www.w3.org/2000/svg" role="img" class="w-8 h-8" viewBox="0 0 28 28">
                 <title>{title}</title>
                 <path fill="currentColor" d="M13.6052 0.923525C16.1432 0.923525 18.6137 1.67953 20.7062 3.09703C22.7447 4.47403 24.3512 6.41803 25.3097 8.68603C26.9837 12.6415 26.5382 17.164 24.1352 20.7145C22.7582 22.753 20.8142 24.3595 18.5462 25.318C14.5907 26.992 10.0682 26.5465 6.51772 24.1435C4.47922 22.7665 2.87272 20.8225 1.91422 18.5545C0.240225 14.599 0.685725 10.0765 3.08872 6.52603C4.46572 4.48753 6.40973 2.88103 8.67772 1.92253C10.2302 1.26103 11.9177 0.923525 13.6052 0.923525ZM13.6052 0.113525C6.15322 0.113525 0.105225 6.16153 0.105225 13.6135C0.105225 21.0655 6.15322 27.1135 13.6052 27.1135C21.0572 27.1135 27.1052 21.0655 27.1052 13.6135C27.1052 6.16153 21.0572 0.113525 13.6052 0.113525Z"></path>
@@ -77,16 +79,16 @@
                 </li>
                 <li>
                     <a
-                        href="{base}/developer"
+                        href="{base}/contributor"
                         class="flex md:justify-center gap-x-2 rounded-lg px-5 py-2.5 md:text-center"
-                        class:text-white={ActiveMenu==`${base}/developer/`}
-                        class:bg-black={ActiveMenu==`${base}/developer/`}
-                        class:hover:bg-slate-200={ActiveMenu!=`${base}/developer/`}
-                        class:hover:text-black={ActiveMenu!=`${base}/developer/`}
-                        on:click={() => { ActiveMenu = `${base}/developer/` }}
+                        class:text-white={ActiveMenu==`${base}/contributor/`}
+                        class:bg-black={ActiveMenu==`${base}/contributor/`}
+                        class:hover:bg-slate-200={ActiveMenu!=`${base}/contributor/`}
+                        class:hover:text-black={ActiveMenu!=`${base}/contributor/`}
+                        on:click={() => { ActiveMenu = `${base}/contributor/` }}
                     >
-                        <i class="fa-solid fa-users pt-1"></i>
-                        Pengembang
+                        <i class="fa-solid fa-masks-theater pt-1"></i>
+                        Kontributor
                     </a>
                 </li>
                 <li>

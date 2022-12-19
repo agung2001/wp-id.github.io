@@ -7,12 +7,13 @@ module.exports = function(grunt) {
         /** Compile TailwindCSS - Cross Platform */
         shell: {
             sveltekit: { command: `npm run build` },
+            list: { command: `node list.js` },
             npm_tailwind: { command:
                     `npx tailwindcss build assets/css/tailwind/style.css -o static/css/tailwind.min.css --silent && ` +
                     `node tailwindcsssupport.js`
             },
             sass: { command:
-                    `sass assets/css/styles/style.scss static/css/style.min.css --style compressed`
+                    `npx sass assets/css/styles/style.scss static/css/style.min.css --style compressed`
             }
         },
 
@@ -37,8 +38,9 @@ module.exports = function(grunt) {
                     './src/**/*.svelte',
                     './src/**/*.ts',
                     './src/**/*.js',
+                    './static/contributor/**/*.json',
                 ],
-                tasks: ['build-css', 'build-js']
+                tasks: ['build']
             },
             css: {
                 files: [
@@ -56,9 +58,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     /** Register Tasks */
-    grunt.registerTask('default', ['watch', 'shell:npm_tailwind']);
     grunt.registerTask('build-css', ['shell:npm_tailwind', 'cssmin', 'shell:sass']);
-    grunt.registerTask('build-js', ['shell:sveltekit']);
+    grunt.registerTask('build-js', ['shell:list', 'shell:sveltekit']);
     grunt.registerTask('build', ['build-css', 'build-js']);
+    grunt.registerTask('default', ['build-css', 'shell:list']);
 
 };

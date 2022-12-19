@@ -1,7 +1,7 @@
 <script>
     import { base } from '$app/paths';
     import config from "../config.js";
-    let { title } = config;
+    let { title, socials } = config;
 </script>
 
 <footer class="px-4 md:px-16 mt-12 mb-6">
@@ -10,18 +10,11 @@
             <div class="text-xl text-white font-bold">Mari Tergabung di Dalam Komunitas WordPress Indonesia</div>
             <div class="text-gray-400">Bergabung dengan 77,000+ anggota dari seluruh Indonesia</div>
             <div class="flex justify-center gap-x-6 pt-4 text-white text-xl">
-                <a href="https://www.facebook.com/groups/wp.indonesia/" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://github.com/wp-id/" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://gitlab.com/wp-id/" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-gitlab"></i>
-                </a>
-                <a href="https://chat.wp-id.org/" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-slack"></i>
-                </a>
+                {#each socials as social}
+                    <a href="{social.url}" target="_blank" rel="noopener noreferrer">
+                        <i class="{social.icon}"></i>
+                    </a>
+                {/each}
             </div>
         </div>
 
