@@ -1,4 +1,5 @@
 <script>
+    import { base } from '$app/paths';
     import {_GetContributorList, _GetContributor} from "./+page.js";
     import {onMount} from "svelte";
     let contributors = {};
@@ -17,15 +18,17 @@
 </script>
 
 {#if Object.entries(contributors).length}
-    <div class="px-4 md:px-32">
+    <div class="px-4 md:px-32 my-8">
         <div class="md:col-span-3">
 
-            <div class="grid grid-cols-10">
+            <div class="grid grid-cols-3 md:grid-cols-10">
                 {#each Object.entries(contributors) as [slug, contributor]}
                     <div>
-                        <div class="cursor-pointer w-24 h-24 rounded-full overflow-hidden mx-auto">
-                            <img class="w-full h-full object-cover" src="{contributor.profile_pict}" alt="{contributor.name}">
-                        </div>
+                        <a href="{base}/contributor/detail?nickname={contributor.nickname}">
+                            <div href="{base}" class="cursor-pointer w-24 h-24 rounded-full overflow-hidden mx-auto">
+                                <img class="w-full h-full object-cover" src="{contributor.profile_pict}" alt="{contributor.name}">
+                            </div>
+                        </a>
                         <div class="text-center pt-2">{contributor.name}</div>
                     </div>
                 {/each}

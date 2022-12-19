@@ -2,10 +2,13 @@
   "name": "Agung Sundoro",
   "nickname": "agung2001",
   "profile_pict": "https://avatars.githubusercontent.com/u/4479106",
-  "your_contribution": "Saya adalah WP Developer, saya mengembankan Plugin & Thema dan membagikannya secara gratis di WordPress Theme directory",
+  "your_contribution": "Saya adalah WP Developer, saya mengembankan Plugin & Thema dan membagikannya secara gratis di WordPress Theme directory.",
   "socials": [
       {
-        "name": "GitHub",
+        "icon": "fa-brands fa-wordpress",
+        "url": "https://profiles.wordpress.org/agung2001/"
+      },
+      {
         "icon": "fa-brands fa-github",
         "url": "https://github.com/agung2001"
       }

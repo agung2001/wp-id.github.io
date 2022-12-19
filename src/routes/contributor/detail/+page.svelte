@@ -1,34 +1,33 @@
 <script>
-    import {_GetContributorList, _GetContributor} from "./+page.js";
+    import {_GetContributor} from "../+page.js";
     import {onMount} from "svelte";
-    let contributors = [];
+    let contributor;
 
     /** Lifecycle onMount */
     onMount(async () => {
-        let list = await _GetContributorList();
-        list.map(async (d) => {
-            if(d!='list.json'){
-                let data = await _GetContributor(d);
-                contributors = [...contributors, ...[data]]
-            }
-        })
+        const urlParams = new URLSearchParams(window.location.search);
+        contributor = await _GetContributor(`${urlParams.get('nickname')}.json`)
     });
 </script>
 
-{#if contributors.length}
-    <div class="px-4 md:px-32">
-        <div class="md:col-span-3">
-
-            <div class="grid grid-cols-10">
-                {#each contributors as developer}
-                    <div>
-                        <div class="cursor-pointer w-24 h-24 rounded-full overflow-hidden mx-auto">
-                            <img class="w-full h-full object-cover" src="{developer.profile_pict}" alt="{developer.name}">
-                        </div>
-                        <div class="text-center pt-2">{developer.name}</div>
-                    </div>
-                {/each}
+{#if contributor}
+    <div class="px-4 md:px-64 mb-12">
+        <div class="md:flex gap-x-8 py-12">
+            <div class="overflow-hidden rounded-full w-32 h-32">
+                <img class="object-cover w-full h-full" src="{contributor.profile_pict}" alt="{contributor.name}">
+            </div>
+            <div class="pt-2">
+                <h1 class="text-3xl font-bold">{contributor.name}</h1>
+                <p class="py-3 text-gray-500">{contributor.your_contribution}</p>
+                <div class="flex gap-x-4">
+                    {#each contributor.socials as social}
+                        <a href="{social.url}" class="text-lg" target="_blank" rel="noreferrer">
+                            <i class="{social.icon}"></i>
+                        </a>
+                    {/each}
+                </div>
             </div>
         </div>
     </div>
+
 {/if}

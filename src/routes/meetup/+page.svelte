@@ -13,7 +13,7 @@
 </script>
 
 {#if meetups.length}
-    <div class="px-4 md:px-32">
+    <div class="px-4 md:px-32 my-6">
         <div class="md:grid md:grid-cols-5 gap-x-6">
             <div class="md:col-span-3 overflow-hidden w-full rounded-xl" style="height:60vh;">
                 <img class="w-full h-full object-cover shadow ease-in duration-300"
