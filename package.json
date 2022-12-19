@@ -19,6 +19,7 @@
 		"grunt-contrib-cssmin": "^4.0.0",
 		"grunt-contrib-watch": "^1.1.0",
 		"grunt-shell": "^4.0.0",
+		"masonry-layout": "^4.2.2",
 		"postcss": "^8.4.20",
 		"shelljs": "^0.8.5",
 		"svelte": "^3.54.0",
