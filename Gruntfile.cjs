@@ -12,7 +12,7 @@ module.exports = function(grunt) {
                     `node tailwindcsssupport.js`
             },
             sass: { command:
-                    `sass assets/css/styles/style.scss static/css/style.min.css --style compressed`
+                    `npx sass assets/css/styles/style.scss static/css/style.min.css --style compressed`
             }
         },
 

@@ -21,6 +21,7 @@
 		"grunt-shell": "^4.0.0",
 		"moment": "^2.29.4",
 		"postcss": "^8.4.20",
+		"sass": "^1.57.0",
 		"shelljs": "^0.8.5",
 		"svelte": "^3.54.0",
 		"svelte-check": "^2.9.2",
