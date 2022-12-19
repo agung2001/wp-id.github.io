@@ -1,0 +1,16 @@
+{
+  "name": "Niels Lange",
+  "nickname": "nielslange",
+  "profile_pict": "https://secure.gravatar.com/avatar/0eb4d4cb15c2538a435c4ef2f300f98c?s=100&d=mm&r=g",
+  "your_contribution": "Niels works as a JavaScript Engineer for Automattic where he mainly works on the WooCommerce Blocks plugin. Outside work, he organises WordCamps and WordPress Meetups both in Europe and Asia.",
+  "socials": [
+    {
+      "icon": "fa-brands fa-wordpress",
+      "url": "https://profiles.wordpress.org/nielslange/"
+    },
+    {
+      "icon": "fa-brands fa-github",
+      "url": "https://github.com/nielslange"
+    }
+  ]
+}

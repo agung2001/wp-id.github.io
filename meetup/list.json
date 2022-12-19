@@ -1,1 +1,72 @@
-["jakarta.json"]
+[
+  {
+    "location": "Bali",
+    "cover": "https://secure.meetupstatic.com/photos/event/e/5/d/9/clean_469438841.jpeg",
+    "url": "https://www.meetup.com/bali-wordpress-meetup/"
+  },
+  {
+    "location": "Bandung",
+    "cover": "https://secure.meetupstatic.com/photos/event/f/9/d/clean_475023997.jpeg",
+    "url": "https://www.meetup.com/Bandung-WordPress-Meetup/"
+  },
+  {
+    "location": "Bekasi",
+    "cover": "https://secure.meetupstatic.com/photos/event/1/a/6/3/clean_456846755.jpeg",
+    "url": "https://www.meetup.com/Bekasi-WordPress-Meetup/"
+  },
+  {
+    "location": "Demak",
+    "cover": "https://secure.meetupstatic.com/photos/event/a/2/4/6/clean_506141542.jpeg",
+    "url": "https://www.meetup.com/demak-wordpress-meetup/"
+  },
+  {
+    "location": "Gresik",
+    "cover": "https://secure.meetupstatic.com/photos/event/6/9/6/9/clean_489206985.jpeg",
+    "url": "https://www.meetup.com/Meetup-WordPress-Gresik/"
+  },
+  {
+    "location": "Jakarta",
+    "cover": "https://secure.meetupstatic.com/photos/event/5/b/3/2/clean_473003346.jpeg",
+    "url": "https://www.meetup.com/Jakarta-WordPress-Meetup/"
+  },
+  {
+    "location": "Kediri",
+    "cover": "https://secure.meetupstatic.com/photos/event/3/f/1/8/clean_507376152.jpeg",
+    "url": "https://www.meetup.com/kediri-wordpress-meetup/"
+  },
+  {
+    "location": "Semarang",
+    "cover": "https://secure.meetupstatic.com/photos/event/3/2/0/5/clean_484032805.jpeg",
+    "url": "https://www.meetup.com/Semarang-WordPress-Meetup/"
+  },
+  {
+    "location": "Solo",
+    "cover": "https://secure.meetupstatic.com/photos/event/6/b/8/e/clean_487227534.jpeg",
+    "url": "https://www.meetup.com/Surakarta-WordPress-Meetup/"
+  },
+  {
+    "location": "Surabaya",
+    "cover": "https://secure.meetupstatic.com/photos/event/9/2/c/2/clean_493777570.jpeg",
+    "url": "https://www.meetup.com/Surabaya-WordPress-Meetup/"
+  },
+  {
+    "location": "Tangsel",
+    "cover": "https://secure.meetupstatic.com/photos/event/b/6/3/8/clean_508426648.jpeg",
+    "url": "https://www.meetup.com/tangsel-wordpress-meetup/"
+  },
+  {
+    "location": "Tegal",
+    "cover": "https://secure.meetupstatic.com/photos/event/3/a/b/6/clean_507135030.jpeg",
+    "url": "https://www.meetup.com/tegal-wordpress-meetup/"
+  },
+  {
+    "location": "Wonosobo",
+    "cover": "https://secure.meetupstatic.com/photos/event/5/1/9/4/clean_505880884.jpeg",
+    "url": "https://www.meetup.com/wonosobo-wordpress-meetup/"
+  },
+  {
+    "location": "Yogyakarta",
+    "cover": "https://secure.meetupstatic.com/photos/event/4/0/3/0/clean_506176432.jpeg",
+    "url": "https://www.meetup.com/Yogyakarta-WordPress-Meetup/"
+  }
+]

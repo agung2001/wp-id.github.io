@@ -1,0 +1,1 @@
+import{b as o}from"./paths-b4419565.js";const r=async()=>await fetch(`${o}/contributor/list.json`).then(t=>t.json()),n=async t=>await fetch(`${o}/contributor/${t}`).then(e=>e.json()),s=Object.freeze(Object.defineProperty({__proto__:null,_GetContributorList:r,_GetContributor:n},Symbol.toStringTag,{value:"Module"}));export{r as _,n as a,s as b};

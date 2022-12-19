@@ -1,0 +1,1 @@
+import{b as t}from"./paths-b4419565.js";const o=async()=>await fetch(`${t}/meetup/list.json`).then(e=>e.json()),s=Object.freeze(Object.defineProperty({__proto__:null,_GetMeetupList:o},Symbol.toStringTag,{value:"Module"}));export{o as _,s as a};

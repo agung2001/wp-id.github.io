@@ -1,0 +1,16 @@
+{
+  "name": "Ivan Kristianto",
+  "nickname": "ivankristianto",
+  "profile_pict": "https://secure.gravatar.com/avatar/6685a72b801dc159a59ed45887f0e8b2?s=100&d=mm&r=g",
+  "your_contribution": "Senior Web Engineer at Human Made and Google Developer Expert for Web Technologies",
+  "socials": [
+    {
+      "icon": "fa-brands fa-wordpress",
+      "url": "https://profiles.wordpress.org/ivankristianto/"
+    },
+    {
+      "icon": "fa-brands fa-github",
+      "url": "https://github.com/ivankristianto"
+    }
+  ]
+}
