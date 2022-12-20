@@ -18,6 +18,9 @@ Headless WordPress website dari [WP-ID](https://wp-id.org).
 - Development : `npm run build:development`
 - Production : `npm run build:production`
 
+## 🎉 Berkontribusi
+Lihat panduan berkontribusi [disini](CONTRIBUTING.md)
+
 ## ⚒️ Tools
 - [GruntJS](https://gruntjs.com/)
 - [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action)
