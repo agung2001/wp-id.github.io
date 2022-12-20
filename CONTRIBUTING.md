@@ -21,7 +21,7 @@ Dari Indonesia untuk Indonesia 🇮🇩
 ```
 
 Catatan:
-- Hanya menerima link social dari (WordPress / GitHub)
+- Hanya menerima link social dari (WordPress / GitHub / YouTube)
 
 
 ## 📟 Menjadi kontributor plugin & tema
@@ -36,3 +36,6 @@ Tema : `/static/themes/NAMATEMA.json`
 }
 
 ```
+
+Catatan:
+- Hanya menerima url dari plugin/theme repository, aka plugin/theme gratis tidak berbayar
