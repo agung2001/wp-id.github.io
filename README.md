@@ -12,11 +12,17 @@ Headless WordPress website dari [WP-ID](https://wp-id.org).
 Ingin terlibat sebagai kontributor atau sponsor?
 Lihat panduan berkontribusi [disini](CONTRIBUTING.md)
 
-## 📝 Installasi
+## 🚀 Installasi
+
+### 📝 Manual
 1. Ganti nama : `.env-sample` to `.env`
 2. Install paket npm : `npm i`
 3. Bangun asset : `grunt build`
 4. Jalankan server : `npm run dev`
+
+### 🐳 via docker
+- GHCR : `docker run -d -p 80:80 ghcr.io/agung2001/wp-id.github.io:master`
+- Docker Hub : `docker run -d -p 80:80 agung2001/wp-id.github.io:master`
 
 ## ⚒️ Perpusatakaan
 - [GruntJS](https://gruntjs.com/)
