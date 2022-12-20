@@ -3,7 +3,7 @@
 Dari Indonesia untuk Indonesia 🇮🇩
 
 ## 🎉 Menjadi kontributor umum
-`/static/contributor/NAMAPANGGILAN.json`
+File: `/static/contributor/NAMAPANGGILAN.json`
 ```json
 {
   "name": "NAMA_SAYA",
