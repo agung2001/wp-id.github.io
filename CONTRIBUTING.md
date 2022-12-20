@@ -82,7 +82,7 @@ Tema : `/static/themes/NAMATEMA.json`
 
 ```
 
-4. Buat `Pull Request` baru ke `master` branch
+4. Buat `Pull Request` baru ke `master` branch 
 
 Catatan:
 - Hanya menerima url dari plugin/theme repository, aka plugin/theme gratis tidak berbayar
