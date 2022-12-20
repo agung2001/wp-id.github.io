@@ -20,7 +20,7 @@ jobs:
       - name: Build 🔧
         run: |
           npm ci
-          npx grunt build
+          npx grunt
           npm run build
 
       - name: Deploy 🚀
