@@ -4,14 +4,6 @@
     import {onMount} from "svelte";
     let contributors = {};
 
-    /** Bind Update */
-    $: contributors = Object.keys(contributors)
-        .sort()
-        .reduce((accumulator, key) => {
-            accumulator[key] = contributors[key];
-            return accumulator;
-        }, {});
-
     /** Lifecycle onMount */
     onMount(async () => {
         /** Get Data */

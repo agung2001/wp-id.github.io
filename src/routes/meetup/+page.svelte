@@ -27,7 +27,7 @@
 
                 <div class="md:grid md:grid-cols-2 gap-x-4">
                     {#each meetups as meetup}
-                        <a href="{meetup.url}" class="mb-4 md:mb-0 flex justify-center rounded gap-x-2 text-white text-xl bg-red-500 px-5 py-2.5 text-center cursor-pointer"
+                        <a href="{meetup.url}" class="mb-4 flex justify-center rounded gap-x-2 text-white text-xl bg-red-500 px-5 py-2.5 text-center cursor-pointer"
                             on:mouseenter={() => { cover = meetup.cover }}
                            target="_blank"
                            rel="noreferrer"
