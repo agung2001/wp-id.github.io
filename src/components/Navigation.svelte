@@ -22,7 +22,7 @@
             <span class="pl-2 md:pl-4 -mt-0.5  self-center text-xl font-semibold whitespace-nowrap dark:text-white">{title}</span>
         </a>
         <div class="flex md:order-2">
-            <a class="flex gap-x-2 text-white bg-black rounded-lg px-5 py-2.5 text-center md:mr-3">
+            <a href="{base}" class="flex gap-x-2 text-white bg-black rounded-lg px-5 py-2.5 text-center md:mr-3">
                 <i class="fa-solid fa-medal pt-1"></i>
                 Kontribusi
             </a>
