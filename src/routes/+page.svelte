@@ -56,7 +56,7 @@
 {#if PageLoading}
     <div class="mt-6 px-12 py-6 text-center">
         <img src="{base}/img/loading.gif" class="mx-auto" alt="Loading..."> <br>
-        Loading ...
+        Memuat ...
     </div>
 {:else}
     {#if headline}
@@ -82,7 +82,7 @@
     {/if}
     {#if posts}
         <div class="md:mt-8 px-8 md:px-20 py-6">
-            <h3 class="text-2xl font-bold mb-6">Recent blog posts</h3>
+            <h3 class="text-2xl font-bold mb-6">Posting blog terbaru</h3>
             <div class="masonry-grid">
                 {#each posts as post}
                     <div class="break-inside-avoid masonry-grid-item w-full md:w-1/3 px-3">
@@ -118,10 +118,10 @@
                 >
                     {#if ReadMoreLoading}
                         <i class="fa-solid fa-spinner pt-1 pr-2"></i>
-                        Loading ...
+                        Memuat ...
                     {:else}
                         <i class="fa-solid fa-glasses pt-1 pr-2"></i>
-                        Read More
+                        Muat lebih banyak
                     {/if}
                 </span>
             </div>

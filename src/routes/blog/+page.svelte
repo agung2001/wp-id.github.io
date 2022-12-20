@@ -19,7 +19,7 @@
 {#if PageLoading}
     <div class="mt-6 px-12 py-6 text-center">
         <img src="{base}/img/loading.gif" class="mx-auto" alt="Loading..."> <br>
-        Loading ...
+        Memuat ...
     </div>
 {:else}
     <div class="md:px-32">
