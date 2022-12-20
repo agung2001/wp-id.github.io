@@ -9,6 +9,7 @@ Headless WordPress website dari [WP-ID](https://wp-id.org).
 ![Size](https://img.shields.io/github/repo-size/agung2001/wp-id.github.io)
 
 ## 🎉 Berkontribusi
+Ingin terlibat sebagai kontributor atau sponsor?
 Lihat panduan berkontribusi [disini](CONTRIBUTING.md)
 
 ## 📝 Installasi
