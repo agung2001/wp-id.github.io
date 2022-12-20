@@ -1,0 +1,1 @@
+import{b as t}from"./paths-b4419565.js";const n=async()=>await fetch(`${t}/theme/list.json`).then(e=>e.json()),o=async e=>await fetch(`${t}/theme/${e}`).then(a=>a.json()),r=Object.freeze(Object.defineProperty({__proto__:null,_GetThemeList:n,_GetTheme:o},Symbol.toStringTag,{value:"Module"}));export{n as _,o as a,r as b};

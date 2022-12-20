@@ -1,0 +1,1 @@
+import{b as e}from"./paths-b4419565.js";const a=async()=>await fetch(`${e}/plugin/list.json`).then(t=>t.json()),o=async t=>await fetch(`${e}/plugin/${t}`).then(n=>n.json()),r=Object.freeze(Object.defineProperty({__proto__:null,_GetPluginList:a,_GetPlugin:o},Symbol.toStringTag,{value:"Module"}));export{a as _,o as a,r as b};
