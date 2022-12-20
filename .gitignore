@@ -6,7 +6,6 @@
 node_modules
 
 # Build
-/src/CONTRIBUTING.md
 /build
 /static/css/style.min.css
 /static/css/tailwind.min.css
