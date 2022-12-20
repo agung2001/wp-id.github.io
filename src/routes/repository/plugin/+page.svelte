@@ -4,6 +4,11 @@
     import {onMount} from "svelte";
     let repos = {};
 
+    /** Truncate by number of words */
+    const truncate = (str, no_words) => {
+        return str.split(" ").splice(0,no_words).join(" ");
+    }
+
     /** Lifecycle onMount */
     onMount(async () => {
         /** Get Data */
@@ -24,14 +29,14 @@
 
             <div class="md:grid md:grid-cols-3 md:gap-x-4">
                 {#each Object.entries(repos) as [slug, repo]}
-                    <div>
+                    <div class="mb-6">
                         <a href="{repo.url}" target="_blank" rel="noreferrer">
                             <div href="{base}" class="cursor-pointer rounded overflow-hidden mx-auto">
                                 <img class="w-full h-full object-cover" src="{repo.thumbnail}" alt="{repo.name}">
                             </div>
                             <div class="text-center text-xl pt-2">{repo.name}</div>
                         </a>
-                        <div class="text-center text-sm pt-2">{repo.excerpt}</div>
+                        <div class="text-center text-sm pt-2">{ truncate(repo.excerpt, 50) }</div>
                     </div>
                 {/each}
             </div>

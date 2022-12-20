@@ -35,7 +35,7 @@
     });
 
     /** Truncate by number of words */
-    function truncate(str, no_words) {
+    const truncate = (str, no_words) => {
         return str.split(" ").splice(0,no_words).join(" ");
     }
 
