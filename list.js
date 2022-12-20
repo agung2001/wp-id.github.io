@@ -1,12 +1,18 @@
 import fs from 'fs'
 
-/** Meetup */
-const GenerateContributorList = () => {
-    let files = fs.readdirSync('static/contributor/');
-    try {
-        fs.writeFileSync('static/contributor/list.json', JSON.stringify(files));
-        console.log('✅ Successfully generate contributor list!');
-    } catch (e) { console.log(e); }
-}
+/** Generate Data */
+(function(){
+    /** Generate List.json */
+    const GenerateList = (type) => {
+        let files = fs.readdirSync(`static/${type}/`);
+        try {
+            fs.writeFileSync(`static/${type}/list.json`, JSON.stringify(files));
+            console.log(`✅ Successfully generate ${type} list!`);
+        } catch (e) { console.log(e); }
+    }
 
-GenerateContributorList();
+    /** Generate Lists */
+    GenerateList('contributor')
+    GenerateList('plugin')
+    GenerateList('theme')
+})()

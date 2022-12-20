@@ -1,0 +1,6 @@
+{
+  "name": "System Dashboard",
+  "thumbnail": "https://ps.w.org/system-dashboard/assets/banner-772x250.png?rev=2704566",
+  "excerpt": "This plugin provides a central dashboard to monitor various WordPress components, processes and data, including server hardware, software and resource usage. Pairs well with Query Monitor and WP Console to help you do some solid dev work.",
+  "url": "https://wordpress.org/plugins/system-dashboard"
+}
