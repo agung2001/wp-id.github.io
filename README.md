@@ -12,10 +12,10 @@ Headless WordPress website dari [WP-ID](https://wp-id.org).
 Lihat panduan berkontribusi [disini](CONTRIBUTING.md)
 
 ## 📝 Installasi
-1. Rename : `.env-sample` to `.env`
-2. Install npm package : `npm i`
-3. Build assets : `grunt build`
-4. Run server : `npm run dev`
+1. Ganti nama : `.env-sample` to `.env`
+2. Install paket npm : `npm i`
+3. Bangun asset : `grunt build`
+4. Jalankan server : `npm run dev`
 
 ## ⚒️ Perpusatakaan
 - [GruntJS](https://gruntjs.com/)
