@@ -6,6 +6,7 @@
 
     /** Lifecycle onMount */
     onMount(async () => {
+        /** Get Data */
         let list = await _GetContributorList();
         list.map(async (d) => {
             if(d!='list.json'){
@@ -21,7 +22,7 @@
     <div class="px-4 md:px-32 my-8">
         <div class="md:col-span-3">
 
-            <div class="grid grid-cols-3 md:grid-cols-10">
+            <div class="grid grid-cols-3 md:grid-cols-10 gap-y-4">
                 {#each Object.entries(contributors) as [slug, contributor]}
                     <div>
                         <a href="{base}/contributor/detail?nickname={contributor.nickname}">

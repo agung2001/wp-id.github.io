@@ -9,11 +9,11 @@ module.exports = function(grunt) {
             sveltekit: { command: `npm run build` },
             list: { command: `node list.js` },
             npm_tailwind: { command:
-                    `npx tailwindcss build assets/css/tailwind/style.css -o static/css/tailwind.min.css --silent && ` +
-                    `node tailwindcsssupport.js`
+                `npx tailwindcss build assets/css/tailwind/style.css -o static/css/tailwind.min.css --silent && ` +
+                `node tailwindcsssupport.js`
             },
             sass: { command:
-                    `npx sass assets/css/styles/style.scss static/css/style.min.css --style compressed`
+                `npx sass assets/css/styles/style.scss static/css/style.min.css --style compressed`
             }
         },
 
@@ -38,7 +38,6 @@ module.exports = function(grunt) {
                     './src/**/*.svelte',
                     './src/**/*.ts',
                     './src/**/*.js',
-                    './static/contributor/**/*.json',
                 ],
                 tasks: ['build']
             },

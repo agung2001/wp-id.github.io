@@ -8,17 +8,23 @@ Headless WordPress website dari [WP-ID](https://wp-id.org).
 ![Stars](https://img.shields.io/github/stars/agung2001/wp-id.github.io?style=social)
 ![Size](https://img.shields.io/github/repo-size/agung2001/wp-id.github.io)
 
-## 📝 Installation
-1. Rename : `.env-sample` to `.env`
-2. Install npm package : `npm i`
-3. Build assets : `grunt build`
-4. Run server : `npm run dev`
+## 🎉 Berkontribusi
+Ingin terlibat sebagai kontributor atau sponsor?
+Lihat panduan berkontribusi [disini](CONTRIBUTING.md)
 
-## 🚀 Deployment
-- Development : `npm run build:development`
-- Production : `npm run build:production`
+## 🚀 Installasi
 
-## ⚒️ Tools
+### 📝 Manual
+1. Ganti nama : `.env-sample` to `.env`
+2. Install paket npm : `npm i`
+3. Bangun asset : `grunt build`
+4. Jalankan server : `npm run dev`
+
+### 🐳 via docker
+- GHCR : `docker run -d -p 80:80 ghcr.io/agung2001/wp-id.github.io:master`
+- Docker Hub : `docker run -d -p 80:80 agung2001/wp-id.github.io:master`
+
+## ⚒️ Perpusatakaan
 - [GruntJS](https://gruntjs.com/)
 - [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action)
 - [MomentJS](https://momentjs.com/)

@@ -4,8 +4,8 @@ import adapter from "@sveltejs/adapter-static";
 const config = {
 	kit: {
 		adapter: adapter(),
-		paths: { base: "/wp-id.github.io" }
-	}
+		paths: { base: "/wp-id.github.io" },
+	},
 };
 
 export default config;

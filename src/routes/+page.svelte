@@ -35,7 +35,7 @@
     });
 
     /** Truncate by number of words */
-    function truncate(str, no_words) {
+    const truncate = (str, no_words) => {
         return str.split(" ").splice(0,no_words).join(" ");
     }
 
@@ -56,11 +56,11 @@
 {#if PageLoading}
     <div class="mt-6 px-12 py-6 text-center">
         <img src="{base}/img/loading.gif" class="mx-auto" alt="Loading..."> <br>
-        Loading ...
+        Memuat ...
     </div>
 {:else}
     {#if headline}
-        <div class="headline-cover rounded-2xl overflow-hidden w-full h-screen mx-auto" style="max-height:80vh;">
+        <div class="headline-cover rounded-2xl overflow-hidden w-full h-screen mx-auto" style="max-height:60vh;">
             <a href="{base}/blog?id={headline['id']}">
                 {#if headline?.yoast_head_json?.og_image }
                     <img class="object-cover w-full h-full opacity-40 md:opacity-70 hover:opacity-100 ease-in duration-300"
@@ -74,14 +74,15 @@
                 <div class="absolute px-8 md:px-12 text-white -mt-72 md:-mt-60">
                     <div class="text-xl pb-4">Headline</div>
                     <h3 class="text-3xl font-bold pb-4">{ headline['title']['rendered'] }</h3>
-                    <div class="w-full md:w-7/12">{ @html truncate(headline['excerpt']['rendered'], 40)  }</div>
+                    <div class="w-full md:w-7/12 block md:hidden">{ @html truncate(headline['excerpt']['rendered'], 20)  }</div>
+                    <div class="w-full md:w-7/12 hidden md:block">{ @html truncate(headline['excerpt']['rendered'], 50)  }</div>
                 </div>
             </a>
         </div>
     {/if}
     {#if posts}
-        <div class="mt-8 px-8 md:px-20 py-6">
-            <h3 class="text-2xl font-bold mb-6">Recent blog posts</h3>
+        <div class="md:mt-8 px-8 md:px-20 py-6">
+            <h3 class="text-2xl font-bold mb-6">Posting blog terbaru</h3>
             <div class="masonry-grid">
                 {#each posts as post}
                     <div class="break-inside-avoid masonry-grid-item w-full md:w-1/3 px-3">
@@ -117,10 +118,10 @@
                 >
                     {#if ReadMoreLoading}
                         <i class="fa-solid fa-spinner pt-1 pr-2"></i>
-                        Loading ...
+                        Memuat ...
                     {:else}
                         <i class="fa-solid fa-glasses pt-1 pr-2"></i>
-                        Read More
+                        Muat lebih banyak
                     {/if}
                 </span>
             </div>
