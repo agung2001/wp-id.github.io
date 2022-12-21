@@ -6,10 +6,10 @@ Dari Indonesia untuk Indonesia 🇮🇩
 Apakah Anda Agensi dan Freelancer WordPress di Indonesia?
 Silakan isi [formulir berikut](https://wp-id.org/agensi-freelancer-wordpress-di-indonesia/) jika Anda atau perusahaan Anda ingin terlibat sebagai kontributor atau sponsor untuk kegiatan komunitas WordPress di Indonesia. Pastikan e-mail dan nomor telepon yang dicantumkan aktif untuk kami hubungi.
 
-## 🎉 Menjadi kontributor umum
-Jika anda kontributor umum, anda dapat menambahkan nama anda pada halaman `kontributor` dengan cara sebagai berikut
+## 🎉 Memasukan nama anda sebagai kontributor
+Jika anda kontributor (plugin, tema, translator, event coordinator, dll), anda dapat menambahkan nama anda pada halaman `kontributor` melalui 2 cara berikut (pilih salah satu saja) :
 
-### 📝 Membuat issue baru
+### 📝 Melalui issue baru
 1. Pergi ke halaman [issue](https://github.com/agung2001/wp-id.github.io/issues)
 2. Buat issue baru
 3. Isi komentar dengan data diri anda dengan format berikut :
@@ -32,7 +32,7 @@ Jika anda kontributor umum, anda dapat menambahkan nama anda pada halaman `kontr
 
 4. Klik submit issue baru
 
-### 👨‍💻 Membuat pull request
+### 👨‍💻 Melalui pull request
 1. Fork project ini
 2. Buat branch baru
 3. Tambahkan file dengan format berikut
@@ -60,7 +60,7 @@ Catatan:
 - Hanya menerima link social dari (WordPress / GitHub)
 
 
-## 📟 Menjadi kontributor plugin & tema
+## 📟 Memasukan nama plugin & tema anda
 Jika anda developer, salah satu kontribusi yang anda dapat lakukan untuk WordPress adalah dengan mengembangkan plugin dan tema.
 
 Dengan website ini kami berharap dapat menjadi pusat informasi daftar plugin yang telah dikembangkan oleh developer di Indonesia 🇮🇩.
