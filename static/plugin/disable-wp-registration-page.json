@@ -1,0 +1,6 @@
+{
+  "name": "Disable WP Registration Page",
+  "thumbnail": "https://s.w.org/plugins/geopattern-icon/disable-wp-registration-page.svg",
+  "excerpt": "This plugin disables default WP registration page by redirecting users who access the registration page URL to the default WP login page. If somehow you still want to accept user registration but want to disable default WP registration page to prevent bot, SPAM registration or something like that, this plugin is for you. No settings needed. Install, activate, done.",
+  "url": "https://wordpress.org/plugins/disable-wp-registration-page/"
+}

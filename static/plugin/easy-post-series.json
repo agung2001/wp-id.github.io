@@ -1,0 +1,6 @@
+{
+  "name": "Easy Post Series",
+  "thumbnail": "https://s.w.org/plugins/geopattern-icon/easy-post-series.svg",
+  "excerpt": "This plugin helps you create a series of posts. It creates a new taxonomy named ‘series’ (can be modified via filter, see FAQ). There is no setting needed for this plugin. Once it is installed, assign posts you want to group as a series via post editor.",
+  "url": "https://wordpress.org/plugins/easy-post-series/"
+}
