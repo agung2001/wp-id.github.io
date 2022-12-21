@@ -1,0 +1,16 @@
+{
+  "name": "Adrianti Rusli",
+  "nickname": "adriantirusli",
+  "profile_pict": "https://secure.gravatar.com/avatar/f6cfef6ac805b8d65be099a324015742?s=100&d=mm&r=g",
+  "your_contribution": "I am a Frontend Engineer with industry experience building websites and web applications. I specialize in JavaScript and have professional experience working with PHP and WordPress. I also monitor and process pull requests for production deployments. Active in Indonesia Web and Technology communities both speaking and organizing events specially.",
+  "socials": [
+    {
+      "icon": "fa-brands fa-wordpress",
+      "url": "https://profiles.wordpress.org/adriantirusli/"
+    },
+    {
+      "icon": "fa-brands fa-github",
+      "url": "https://github.com/adriantirusli"
+    }
+  ]
+}

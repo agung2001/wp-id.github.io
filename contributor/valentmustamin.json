@@ -1,0 +1,16 @@
+{
+  "name": "Valent Mustamin",
+  "nickname": "valentmustamin",
+  "profile_pict": "https://secure.gravatar.com/avatar/412bd78cf1a7fa8c1c84ed6995754256?s=100&d=mm&r=g",
+  "your_contribution": "WordPress Developer. Former Lead Organizer of WordCamp Indonesia (2009-2013). Co-organizer Jakarta WordPress Meetup",
+  "socials": [
+    {
+      "icon": "fa-brands fa-wordpress",
+      "url": "https://profiles.wordpress.org/valentmustamin/"
+    },
+    {
+      "icon": "fa-brands fa-github",
+      "url": "https://github.com/valentmustamin"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Muhammad Zamroni",
+  "nickname": "muhammadzamroni",
+  "profile_pict": "https://secure.gravatar.com/avatar/2d82e9ef0bbf58f6e5f88034d149a25a?s=100&d=mm&r=g",
+  "your_contribution": "",
+  "socials": [
+    {
+      "icon": "fa-brands fa-wordpress",
+      "url": "https://profiles.wordpress.org/muhammadzamroni/"
+    },
+    {
+      "icon": "fa-brands fa-github",
+      "url": "https://github.com/matriphe"
+    }
+  ]
+}

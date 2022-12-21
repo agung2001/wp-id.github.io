@@ -1,0 +1,16 @@
+{
+  "name": "Masino Sinaga",
+  "nickname": "masino_sinaga",
+  "profile_pict": "https://secure.gravatar.com/avatar/146c48f079e2961604e989d88a4cabfa?s=100&d=mm&r=g",
+  "your_contribution": "Software Engineering",
+  "socials": [
+      {
+        "icon": "fa-brands fa-wordpress",
+        "url": "https://profiles.wordpress.org/masino_sinaga/"
+      },
+      {
+        "icon": "fa-brands fa-github",
+        "url": "https://github.com/masinosinaga"
+      }
+  ]
+}
