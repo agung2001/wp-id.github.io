@@ -1,0 +1,16 @@
+{
+  "name": "Ainun Nazieb",
+  "nickname": "nazieb",
+  "profile_pict": "https://secure.gravatar.com/avatar/f4b11a32c2ecd4d9a7254cefae17126d?s=100&d=mm&r=g",
+  "your_contribution": "Blogger and developer of WordPress",
+  "socials": [
+    {
+      "icon": "fa-brands fa-wordpress",
+      "url": "https://profiles.wordpress.org/nazieb/"
+    },
+    {
+      "icon": "fa-brands fa-github",
+      "url": "https://github.com/nazieb"
+    }
+  ]
+}
