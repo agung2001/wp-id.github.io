@@ -1,0 +1,16 @@
+{
+  "name": "hxh90",
+  "nickname": "hxh90",
+  "profile_pict": "https://secure.gravatar.com/avatar/179390ea17a8e678e2eb28540db192fc?s=100&d=mm&r=g",
+  "your_contribution": "Full-stack Web Developer experienced in React js, React Native, Redux, Vue, WordPress, PHP and working experience in Java Android development.",
+  "socials": [
+      {
+        "icon": "fa-brands fa-wordpress",
+        "url": "https://profiles.wordpress.org/hxh90/"
+      },
+      {
+        "icon": "fa-brands fa-github",
+        "url": "https://github.com/fujianto"
+      }
+  ]
+}
