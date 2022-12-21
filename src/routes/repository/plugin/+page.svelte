@@ -31,7 +31,7 @@
                 {#each Object.entries(repos) as [slug, repo]}
                     <div class="mb-6">
                         <a href="{repo.url}" target="_blank" rel="noreferrer">
-                            <div href="{base}" class="cursor-pointer rounded overflow-hidden mx-auto">
+                            <div href="{base}" class="cursor-pointer rounded overflow-hidden mx-auto" style="max-height: 160px;">
                                 <img class="w-full h-full object-cover" src="{repo.thumbnail}" alt="{repo.name}">
                             </div>
                             <div class="text-center text-xl pt-2">{repo.name}</div>
