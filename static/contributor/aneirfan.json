@@ -1,0 +1,16 @@
+{
+  "name": "Irfan Nurhamid",
+  "nickname": "aneirfan",
+  "profile_pict": "https://secure.gravatar.com/avatar/35d6c93d1a891ec75c37ef62737ed263?s=100&d=mm&r=g",
+  "your_contribution": "Irfan Nurhamid contributes 5 hours per week to the following teams: Core, Documentation, and Polyglots.",
+  "socials": [
+    {
+      "icon": "fa-brands fa-wordpress",
+      "url": "https://profiles.wordpress.org/aneirfan"
+    },
+    {
+      "icon": "fa-brands fa-github",
+      "url": "https://github.com/aneirfan"
+    }
+  ]
+}

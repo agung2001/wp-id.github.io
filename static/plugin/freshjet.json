@@ -1,0 +1,6 @@
+{
+  "name": "Freshjet",
+  "thumbnail": "https://ps.w.org/freshjet/assets/banner-772x250.png?rev=2298910",
+  "excerpt": "People use SMTP or transactional email to prevent their email sent by wp_mail() fall into spam folder. And if you are using Mailjet as your transactional email, this plugin is probably the most convenient way to use Mailjet transactional email in WordPress.",
+  "url": "https://wordpress.org/plugins/freshjet/"
+}

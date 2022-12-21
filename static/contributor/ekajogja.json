@@ -1,0 +1,16 @@
+{
+  "name": "Eka Y Saputra",
+  "nickname": "ekajogja",
+  "profile_pict": "https://secure.gravatar.com/avatar/d5f67043f64078f1b9c73b1b630e3ad1?s=100&d=mm&r=g",
+  "your_contribution": "localization | documentation",
+  "socials": [
+    {
+      "icon": "fa-brands fa-wordpress",
+      "url": "https://profiles.wordpress.org/ekajogja/"
+    },
+    {
+      "icon": "fa-brands fa-github",
+      "url": "https://github.com/ekajogja"
+    }
+  ]
+}
