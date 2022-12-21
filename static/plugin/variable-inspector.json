@@ -1,0 +1,6 @@
+{
+  "name": "Variable Inspector",
+  "thumbnail": "https://ps.w.org/variable-inspector/assets/banner-772x250.png?rev=2709885",
+  "excerpt": "Variable Inspector allows you to easily inspect your PHP $variables in a visually clean manner at a central dashboard in wp-admin. It aims to be an easy and useful enough debug tool.",
+  "url": "https://wordpress.org/plugins/variable-inspector/"
+}

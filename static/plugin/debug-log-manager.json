@@ -1,0 +1,6 @@
+{
+  "name": "Debug Log Manager",
+  "thumbnail": "https://ps.w.org/debug-log-manager/assets/banner-772x250.png?rev=2783658",
+  "excerpt": "Debug Log Manager allows you to: Enable WP_DEBUG with one click to log PHP, database and JavaScript errors when you need to, and disable it when you’re done. No need to manually edit wp-config.php file. ",
+  "url": "https://wordpress.org/plugins/debug-log-manager/"
+}
