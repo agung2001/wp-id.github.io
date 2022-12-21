@@ -1,6 +1,7 @@
 # Selamat datang di panduan kontribusi WP-ID
 
-Dari Indonesia untuk Indonesia 🇮🇩
+Dari Indonesia untuk Indonesia 🇮🇩. 
+Sebelum berkontribusi mohon terlebih dahulu membaca [Disclaimer](README.md).
 
 ## 🌟 Menjadi kontributor atau sponsor
 Apakah Anda Agensi dan Freelancer WordPress di Indonesia?
